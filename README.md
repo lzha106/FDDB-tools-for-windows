@@ -19,7 +19,7 @@ It includes the FDDB evaluation exe and ROC curve plot scripts on windows platfo
 3. How to use fddb_evaluator.exe?
 It is an cmd on windows to generate ROC curve data from your FDDB detection result file and save into two files named ContROC.txt and DiscROC.txt.
 Launch the command from windows console
-#fddb_evaluator.exe -h
+$ fddb_evaluator.exe -h
 
 ./evaluate [OPTIONS]
    -h              : print usage
@@ -33,11 +33,11 @@ Launch the command from windows console
 
 E.X. Run command like below to generate the ROC curve file
 
-.\fddb_evaluator.exe -d "/PATH/TO/your_fddb_format_file.txt" -i "/PATH/TO/FDDB/UNANNOTATED_IMAGES" -r "/PATH/TO/YOUR_EVALUATION_OUTPUT" -l "/PATH/TO/FDDB-ANNOTATION/FDDB-all.txt" -a "/PATH/TO/FDDB/FDDB-ANNOTATION/FDDB-all-ellipseList.txt"
+$.\fddb_evaluator.exe -d "/PATH/TO/your_fddb_format_file.txt" -i "/PATH/TO/FDDB/UNANNOTATED_IMAGES" -r "/PATH/TO/YOUR_EVALUATION_OUTPUT" -l "/PATH/TO/FDDB-ANNOTATION/FDDB-all.txt" -a "/PATH/TO/FDDB/FDDB-ANNOTATION/FDDB-all-ellipseList.txt"
 
 4. How to draw ROC curve?
 Go to folder of FDDB-tools and run below command from console on windows to generate ROC curve image.
-# gnuplot.exe contROC.p
+$ gnuplot.exe contROC.p
 
 5. Reference
 (1) https://github.com/davidsandberg/facenet
